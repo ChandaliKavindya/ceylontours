@@ -1,15 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ceylon Tours</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sri Lanka - Beautiful Destinations</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: #f2f2f2;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      position: relative;
+      background: url('https://images.pexels.com/photos/13391116/pexels-photo-13391116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+    .hero-text {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 30px 40px;
+      border-radius: 15px;
+      animation: fadeInDown 1.5s ease;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    .section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .destination {
+      margin-bottom: 40px;
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeInUp 1s ease;
+    }
+    .destination:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    }
+    .destination img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .destination-content {
+      padding: 20px;
+    }
+    .destination-content h2 {
+      color: #0077b6;
+      margin-bottom: 10px;
+    }
+    footer {
+      background: #0077b6;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    @media (min-width: 768px) {
+      .destination {
+        display: flex;
+        flex-direction: row;
+      }
+      .destination img {
+        width: 50%;
+      }
+      .destination-content {
+        width: 50%;
+        padding: 40px;
+      }
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
 </head>
 <body>
-    <div>
-        <h1>Ceylon Tours</h1>
-        <p>let's tour sri lanka</p>
-        <p>Sri lankan beachs</p>
+  <header>
+    <div class="hero-text">
+      <h1>Discover Sri Lanka's Beautiful Destinations</h1>
+      <p>Explore breathtaking landscapes, ancient history, and vibrant beaches</p>
     </div>
+  </header>
+  <div class="section">
+    <div class="destination">
+      <img src="https://th.bing.com/th/id/OIP.vokCefW7fOcXpmfCIcFvPgHaE8?rs=1&pid=ImgDetMain" alt="Sigiriya">
+      <div class="destination-content">
+        <h2>Sigiriya</h2>
+        <p>Known as the Lion Rock, Sigiriya is a stunning rock fortress and UNESCO World Heritage site offering panoramic views and ancient frescoes.</p>
+      </div>
+    </div>
+    <div class="destination">
+      <img src="https://th.bing.com/th/id/OIP.p3J5YBZG9fvBqMwhCztDRgHaEK?rs=1&pid=ImgDetMain" alt="Hikkaduwa">
+      <div class="destination-content">
+        <h2>Hikkaduwa</h2>
+        <p>Famous for its beautiful beaches, coral reefs, and vibrant nightlife, Hikkaduwa is a paradise for surfers and snorkelers.</p>
+      </div>
+    </div>
+    <div class="destination">
+      <img src="https://th.bing.com/th/id/OIP.wTFEj1nA8H2vT5uPhAkuwgHaE8?rs=1&pid=ImgDetMain" alt="Polonnaruwa">
+      <div class="destination-content">
+        <h2>Polonnaruwa</h2>
+        <p>An ancient city filled with archaeological treasures and well-preserved ruins, offering a glimpse into Sri Lanka's royal past.</p>
+      </div>
+    </div>
+    <div class="destination">
+      <img src="https://th.bing.com/th/id/R.51ba7d00cc64ee62309dc26b50e1edde?rik=H8ymLg%2fbZ2pE8A&pid=ImgRaw&r=0" alt="Kandy">
+      <div class="destination-content">
+        <h2>Kandy</h2>
+        <p>Home to the sacred Temple of the Tooth and lush gardens, Kandy is a cultural gem surrounded by scenic hills.</p>
+      </div>
+    </div>
+    <div class="destination">
+      <img src="https://th.bing.com/th/id/OIP.x-C4dL0gpwpOvBm_FodEPwHaEH?rs=1&pid=ImgDetMain" alt="Arugam Bay">
+      <div class="destination-content">
+        <h2>Arugam Bay</h2>
+        <p>A world-renowned surfing destination with a laid-back vibe, perfect for both adventurers and beach lovers.</p>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2025 Discover Sri Lanka | All rights reserved</p>
+  </footer>
+  <script>
+    console.log("Welcome to Sri Lanka's beautiful destinations site!");
+  </script>
 </body>
 </html>
